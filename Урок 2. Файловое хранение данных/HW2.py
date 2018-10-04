@@ -11,3 +11,23 @@
 Подготовить данные для записи в виде словаря, в котором первому ключу соответствует список, второму — целое число, третьему — вложенный словарь, где значение каждого ключа — это целое число с юникод-символом, отсутствующим в кодировке ASCII (например, €);
 Реализовать сохранение данных в файл формата YAML — например, в файл file.yaml. При этом обеспечить стилизацию файла с помощью параметра default_flow_style, а также установить возможность работы с юникодом: allow_unicode = True;
 Реализовать считывание данных из созданного файла и проверить, совпадают ли они с исходными.'''
+
+import os
+import chardet
+
+
+def get_data():
+    for file in os.listdir(path='.'):
+        if file.endswith('.txt'):
+            with open(file, 'r', encoding='utf-8') as f:
+                # res = chardet.detect(f.read())
+                for i in f:
+                    print(i)
+
+
+get_data()
+
+# import os
+# for file in os.listdir("."):
+#     if file.endswith(".txt"):
+#         print(os.path.join(".", file))
