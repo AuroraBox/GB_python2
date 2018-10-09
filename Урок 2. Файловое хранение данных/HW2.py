@@ -23,11 +23,19 @@ def get_data():
                 # res = chardet.detect(f.read())
                 for i in f:
                     print(i)
-
-
+#
+#
 get_data()
 
+#
 # import os
 # for file in os.listdir("."):
 #     if file.endswith(".txt"):
 #         print(os.path.join(".", file))
+#
+
+# l = {
+#     True: 'False',
+#     False: 'True',
+# }
+# print(l[True])
