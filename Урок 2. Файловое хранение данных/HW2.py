@@ -4,13 +4,34 @@
 данных. В этой функции из считанных данных необходимо с помощью регулярных выражений извлечь значения параметров «Изготовитель системы», «Название ОС», «Код продукта», «Тип системы». Значения каждого параметра поместить в соответствующий список. Должно получиться четыре списка — например, os_prod_list, os_name_list, os_code_list, os_type_list. В этой же функции создать главный список для хранения данных отчета — например, main_data — и поместить в него названия столбцов отчета в виде списка: «Изготовитель системы», «Название ОС», «Код продукта», «Тип системы». Значения для этих столбцов также оформить в виде списка и поместить в файл main_data (также для каждого файла); '''
 
 import os
+import csv
 
 os_prod_list = []
 os_name_list = []
 os_code_list = []
 os_type_list = []
 
-def get_data():
+files = [file for file in os.listdir('.') if file.endswith('.txt') and file.startswith('info')]
+print(files)
+
+for file in files:
+    with open(file, 'r', newline='', encoding='cp1251') as f:
+        lines = f.readlines()
+        for line in lines:
+            if line.startswith('Изготовитель системы'):
+                os_prod_list.append(line)
+                print(os_prod_list, '\n')
+            elif line.startswith('Название ОС'):
+                os_name_list.append(line)
+                print(os_name_list, '\n')
+            elif line.startswith('Код продукта'):
+                os_code_list.append(line)
+                print(os_code_list, '\n')
+            elif line.startswith('Тип системы'):
+                os_type_list.append(line)
+                print(os_type_list, '\n')
+
+# def get_data():
 
 
 '''
