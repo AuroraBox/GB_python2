@@ -13,7 +13,8 @@ image/cache/
 */.vscode/
 .vscode
 */settings.json
-
+*/venv/
+venv/
 venv
 
 
