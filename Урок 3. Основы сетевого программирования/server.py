@@ -5,5 +5,3 @@ s = socket.socket()
 
 print(math.pi) 
 # настройка git VSC
-
-
