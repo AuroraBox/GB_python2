@@ -1,0 +1,40 @@
+# Config files
+
+# Cache
+system/storage/cache
+image/cache/
+# OS X
+*.DS_Store
+.AppleDouble
+.LSOverride
+*/.idea
+.idea
+*/.vscode/
+*/.vscode/
+.vscode
+*/settings.json
+
+venv
+
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
