@@ -1,7 +1,9 @@
 import socket
+import math
 
-s = socket(AF_INET, SOCK_STREAM)
+s = socket.socket() 
 
+print(math.pi) 
 # настройка git VSC
 
 
