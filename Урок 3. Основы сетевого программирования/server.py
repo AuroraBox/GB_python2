@@ -18,5 +18,3 @@ for port in ports:
 
 print('отсканированно - {} порта'.format(len(ports)))
 # simple_ports_scaner
-
-дописали
