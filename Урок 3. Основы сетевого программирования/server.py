@@ -17,4 +17,4 @@ for port in ports:
         print(host, port, 'открыт')
 
 print('отсканированно - {} порта'.format(len(ports)))
-
+# simple_ports_scaner
